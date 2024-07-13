@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="urn">
+        <div class="screen">
+            <div class="division--top">
+                <div class="division-top--infos">
+                    <div class="division-top--text1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="division-top--text2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="division-top--number">
+                        <div class="number blinks"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="division-top--moreInfos">
+                        Nome: Fulado <br>
+                        Partido: AA <br>
+                        Vice-Prefeito: Ciclano
+                    </div>
+                </div>
+                <div class="division-top--img">
+                    <div class="division-top-img--position">
+                        <img src="./images/84.jpg" alt="prefeito">
+                        Prefeito
+                    </div>
+                    <div class="division-top-img--position small">
+                        <img src="./images/84_2.jpg" alt="vice-Prefeito">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="division--bottom">
+                Aperte a tecla: <br>
+                CONFIRMA para confirmar este voto <br>
+                CORRIGE para REINICIAR o voto
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('1')">1</div>
+                <div class="keyboard--button" onclick="clicked('2')">2</div>
+                <div class="keyboard--button"  onclick="clicked('3')">3</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('4')">4</div>
+                <div class="keyboard--button" onclick="clicked('5')">5</div>
+                <div class="keyboard--button" onclick="clicked('6')">6</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('7')">7</div>
+                <div class="keyboard--button" onclick="clicked('8')">8</div>
+                <div class="keyboard--button" onclick="clicked('9')">9</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('0')">0</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button btn--white" onclick="white()">BRANCO</div>
+                <div class="keyboard--button btn--correct" onclick="correct()">CORRIGE</div>
+                <div class="keyboard--button btn--confirm" onclick="confirm()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+    <script src="./etapas.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

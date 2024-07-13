@@ -1,0 +1,135 @@
+@keyframes blinks {
+    0% {opacity: 0.1;}
+    50% {opacity: 1;}
+    100% {opacity: 0.1;}
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urn {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+.screen {
+    width: 450px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+.division--top {
+    flex: 1;
+    display: flex;
+}
+.division-top--infos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 20px;
+}
+.division-top--text1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.division-top--text2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.division-top--number {
+    height: 50px;
+}
+.division-top--number .number {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #000;
+    font-size: 25px;
+    margin-right: 3px;
+}
+.blinks {
+    animation-name: blinks;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.division-top--moreInfos {
+    flex: 1;
+    line-height: 30px;
+}
+.division-top--img {
+    width: 90px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.division-top-img--position {
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.division-top-img--position img {
+    width: 100%;
+}
+.division-top-img--position.small {
+    width: 80%;
+    font-size: 12px;
+}
+.division--bottom {
+    font-size: 13px;
+    height: 50px;
+    border-top: 2px solid #000;
+}
+.keyboard {
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+.keyboard--line {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.keyboard--button {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    box-shadow: 3px 3px 2px #555;
+    cursor: pointer;
+}
+.btn--white {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+.btn--correct {
+    background-color: #F09046;
+    color: #000;
+    font-size: 15px;
+}
+.btn--confirm {
+    background-color: #48c079;
+    color: #000;
+    font-size: 15px;
+    width: 85px;
+    height: 50px;
+}

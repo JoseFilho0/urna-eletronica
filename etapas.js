@@ -1,7 +1,7 @@
 let etapas = [
     {
         titulo: 'VEREADOR',
-        numeros: 4,
+        numeros: 5,
         candidatos: [
             {
                 numero: '38111',
